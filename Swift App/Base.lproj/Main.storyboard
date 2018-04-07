@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scott's awesome app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-Tt-o5L">
+                                <rect key="frame" x="105" y="45" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2B-ax-V2E">
+                                <rect key="frame" x="155" y="116" width="64" height="30"/>
+                                <state key="normal" title="Push, yo!"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0Z-B7-HHX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-qj-mkF">
+                                <rect key="frame" x="109" y="183" width="157" height="30"/>
+                                <state key="normal" title="Another button...what?"/>
+                                <connections>
+                                    <action selector="anotherButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANm-VA-kC4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GU8-Tt-o5L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="DP4-Ae-r5K"/>
+                            <constraint firstItem="aG4-qj-mkF" firstAttribute="top" secondItem="T2B-ax-V2E" secondAttribute="bottom" constant="37" id="Oov-uC-aKq"/>
+                            <constraint firstItem="aG4-qj-mkF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XAN-9g-z9F"/>
+                            <constraint firstItem="GU8-Tt-o5L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8p-nU-gW1"/>
+                            <constraint firstItem="T2B-ax-V2E" firstAttribute="top" secondItem="GU8-Tt-o5L" secondAttribute="bottom" constant="50" id="ton-Up-MM5"/>
+                            <constraint firstItem="T2B-ax-V2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uaG-4O-acC"/>
+                            <constraint firstItem="GU8-Tt-o5L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yVS-bp-AUN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="theTitle" destination="GU8-Tt-o5L" id="0bi-lx-mgF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
